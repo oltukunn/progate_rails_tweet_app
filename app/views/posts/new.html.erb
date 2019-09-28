@@ -1,0 +1,8 @@
+<div class="form">
+  <div class="fomr-body">
+  <%= form_with model: @post, url: posts_path, method: :post do |f| %>
+  <%= f.text_area :content, size: "30x10" %>
+  <input type="submit" value="投稿する">
+  <% end %>
+  </div>
+</div>
