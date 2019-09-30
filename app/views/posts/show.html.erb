@@ -2,6 +2,8 @@
   <div class="container">
     <div class="posts-show-item">
       <p><%= @post.content %></p>
+      <p><%= link_to "編集", edit_post_path(@post), method: :get %></p>
+      <p><%= link_to "削除", post_path(@post), method: :delete, data:{confirm: "削除しますか？"}%></p>
   </div>
     <div class="posts_time">
       <p><%= @post.created_at %></p>

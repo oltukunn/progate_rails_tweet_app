@@ -1,0 +1,15 @@
+<div class="main posts-show">
+  <div class="container">
+    <h1 class="form-heading">編集する</h1>
+    <%= form_with model: @post, url: post_path, method: :patch do |f| %>
+    <div class="form">
+      <div class="form-body">
+        <% @post.errors.full_messages.each do |message| %>
+          <div class="form-error"><%= message %></div>
+        <% end %>
+        <%= f.text_area :content, size: "80" %>
+      </div>
+    </div>
+      <input type="submit" value="保存する" >
+    <% end %>
+</div>

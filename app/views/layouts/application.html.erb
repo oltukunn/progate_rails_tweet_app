@@ -20,6 +20,7 @@
       <li><%= link_to "新規投稿", new_post_path, method: :get %></li>
     </ul>
     </header>
+    <%= flash[:notice] %>
     <%= yield %>
   </body>
 </html>
