@@ -5128,3 +5128,82 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 7164)
 
 
+Started GET "/posts/new" for ::1 at 2019-09-30 17:24:11 +0900
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#new as HTML
+  Parameters: {"authenticity_token"=>"0X6gmAx8yfJ6wZtGmYB3lCRqrGOqHF8wCobPVaqaflXcroI3gqGX3nrpFM87JPmo4Vj/wgZ+TR0Swf9s2kpXaQ=="}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 61.5ms | Allocations: 490)
+Completed 200 OK in 280ms (Views: 216.7ms | ActiveRecord: 0.0ms | Allocations: 6840)
+
+
+Started GET "/posts" for ::1 at 2019-09-30 17:26:58 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"DVI3ScNSfU9KOKg2858Jv/FZaF1mEOPiyajwPaGEYNwAghXmTY8jY0oQJ79RO4eDNGs7/Mpy8c/R78AE0VRJ4A=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (11.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 51.9ms | Allocations: 953)
+Completed 200 OK in 211ms (Views: 174.0ms | ActiveRecord: 11.7ms | Allocations: 7191)
+
+
+Started GET "/about" for ::1 at 2019-09-30 17:26:59 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 5.3ms | Allocations: 93)
+Completed 200 OK in 75ms (Views: 61.9ms | ActiveRecord: 0.0ms | Allocations: 6863)
+
+
+Started GET "/posts/new" for ::1 at 2019-09-30 17:27:10 +0900
+Processing by PostsController#new as HTML
+  Parameters: {"authenticity_token"=>"sAcX3XhlW9A8uLviTwYpI8rv6dcK6saWIrX0TawG+/W91zVy9rgF/DyQNGvtoqcfD926dqaI1Ls68sR03NbSyQ=="}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 211)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 6426)
+
+
+Started GET "/posts" for ::1 at 2019-09-30 17:27:11 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"Mb1GJysVwp2NztujiqknseGQRuYKNdM92/VHS2AyjS88bWSIpcicsY3mVCooDamNJKIVR6ZXwRDDsndyEOKkEw=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 937)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 0.2ms | Allocations: 7167)
+
+
+Started GET "/about" for ::1 at 2019-09-30 17:27:12 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 6224)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191001062224)
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191001062224)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191001062224"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "にんじゃわんこ"], ["email", "wanko@prog-8.com"], ["created_at", "2019-10-01 06:27:13.281010"], ["updated_at", "2019-10-01 06:27:13.281010"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ひつじ仙人"], ["email", "hitsuji@prog-8.com"], ["created_at", "2019-10-01 06:35:59.060487"], ["updated_at", "2019-10-01 06:35:59.060487"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ひつじ仙人"], ["email", "hitsuji@prog-8.com"], ["created_at", "2019-10-01 06:36:28.987514"], ["updated_at", "2019-10-01 06:36:28.987514"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ひつじ仙人"], ["email", "hitsuji@prog-8.com"], ["created_at", "2019-10-01 06:38:35.304568"], ["updated_at", "2019-10-01 06:38:35.304568"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
