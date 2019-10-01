@@ -5207,3 +5207,2450 @@ Migrating to CreateUsers (20191001062224)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ひつじ仙人"], ["email", "hitsuji@prog-8.com"], ["created_at", "2019-10-01 06:38:35.304568"], ["updated_at", "2019-10-01 06:38:35.304568"]]
   [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Destroy (4.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wanko@prog-8.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "にんじゃわんこ"], ["email", "wanko@prog-8.com"], ["created_at", "2019-10-01 07:26:03.151787"], ["updated_at", "2019-10-01 07:26:03.151787"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wanko@prog-8.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wanko@prog-8.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for ::1 at 2019-10-01 16:32:17 +0900
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 1.4ms | Allocations: 214)
+Completed 200 OK in 1235ms (Views: 1211.3ms | ActiveRecord: 0.0ms | Allocations: 1336743)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-01 16:32:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/about" for ::1 at 2019-10-01 16:32:20 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 2.5ms | Allocations: 94)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6229)
+
+
+Started GET "/posts" for ::1 at 2019-10-01 16:32:21 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"ECfaJtEjqTER8i/T8p4aa9RuIEhgt8s7/7VQhm3QjQTaxKELw2IL5tD6ceKOY5QaCwxiW/YbuFzMczq3rFTmpA=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3613)
+Completed 200 OK in 28ms (Views: 14.8ms | ActiveRecord: 1.4ms | Allocations: 11073)
+
+
+Started GET "/posts/new" for ::1 at 2019-10-01 16:32:23 +0900
+Processing by PostsController#new as HTML
+  Parameters: {"authenticity_token"=>"fTfpsSsGqyNfh7hzeMOlSswqE8HgEJuq9A71hkUxB/a31JKcOUcJ9J6P5kIEPis7E0hR0na86M3HyJ+3hLVsVg=="}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 612)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6719)
+
+
+Started GET "/posts" for ::1 at 2019-10-01 16:32:24 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"tfEFpbA6Y6R8cxDpRpcuJ9jz0KQBooSRRTHT27OEq/V/En6IonvBc717Ttg6aqBWB5GSt5cO9/Z297nqcgDAVQ=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 940)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.2ms | Allocations: 6930)
+
+
+Started GET "/about" for ::1 at 2019-10-01 16:32:25 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 5982)
+
+
+Started GET "/posts" for ::1 at 2019-10-01 16:32:26 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"ysFtU9b9iT0qR1Om1MKuF55ScgF0+cIza86kRhfIA8cAIhZ+xLwr6utPDZeoPyBmQTAwEuJVsVRYCM531kxoZw=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 942)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 6922)
+
+
+Started GET "/posts/1" for ::1 at 2019-10-01 16:32:27 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"authenticity_token"=>"g6gNAy9zv5JxzvkSnzW1yBFXTA9vPUkiYnOQ2E49KQdJS3YuPTIdRbDGpyPjyDu5zjUOHPmROkVRtfrpj7lCpw==", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:6:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 303)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 7310)
+
+
+Started GET "/" for ::1 at 2019-10-01 16:32:30 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5976)
+
+
+Started GET "/" for ::1 at 2019-10-01 16:48:51 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 93)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 25382)
+
+
+Started GET "/users" for ::1 at 2019-10-01 16:48:53 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"xfCmJUwq57fqmqJiK8woKS0VIv0B/hAlafAOX193zy0PE90IXmtFYCuS/FNXMaZY8ndg7pdSY0JaNmRunvOkjQ=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4989)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.8ms | Allocations: 12868)
+
+
+Started GET "/users" for ::1 at 2019-10-01 16:50:39 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 734)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 8603)
+
+
+Started GET "/users" for ::1 at 2019-10-01 16:52:40 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 730)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 8590)
+
+
+Started GET "/users" for ::1 at 2019-10-01 16:57:30 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4017)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 1.0ms | Allocations: 12310)
+
+
+Started GET "/users" for ::1 at 2019-10-01 17:02:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3969)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.8ms | Allocations: 12272)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 17:02:32 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 133)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 7705)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 17:18:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 129)
+Completed 200 OK in 30ms (Views: 21.8ms | ActiveRecord: 0.2ms | Allocations: 11941)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 17:18:51 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 142.0ms | Allocations: 73415)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms | Allocations: 73991)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007fcc58f9bda8>):
+     5:       <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+     6:       <div class="form-body">
+     7:         <p>ユーザー名</p>
+     8:         <%= f.input :name %>
+     9:         <p>メールアドレス</p>
+    10:         <%= f.input :email %>
+    11:         <input type="submit" value="新規登録">
+  
+app/views/users/new.html.erb:8
+app/views/users/new.html.erb:5
+Started GET "/users/new" for ::1 at 2019-10-01 17:21:06 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 428)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 8335)
+
+
+Started GET "/usersshow" for ::1 at 2019-10-01 17:21:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/usersshow"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/show" for ::1 at 2019-10-01 17:22:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1044)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  
+app/controllers/users_controller.rb:6:in `show'
+Started GET "/user/show" for ::1 at 2019-10-01 17:22:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2019-10-01 17:22:25 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1044)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:6:in `show'
+Started GET "/" for ::1 at 2019-10-01 17:23:18 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 91)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 7452)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-01 17:23:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-10-01 17:23:20 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"vUtFLmmuFES4C2A0/1wwIokYH6KbcifDCms8yYbyY2V3qD4De++2k3kDPgWDob5TVnpdsQ3eVKQ5rVb4R3YIxQ=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 802)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 7749)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 17:23:21 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 7589)
+
+
+Started GET "/users" for ::1 at 2019-10-01 17:23:54 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"Qs49gZwnYqdor5VVAY1Mo6wDMA1C7JdLhzN2ejogYQSILUasjmbAcKmny2R9cMLSc2FyHtRA5Cy09RxL+6QKpA=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3908)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.8ms | Allocations: 11317)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 17:23:56 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 7439)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 17:25:12 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 7325)
+
+
+Started GET "/users" for ::1 at 2019-10-01 17:25:15 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"ELKhSoWA9Sy7tXAQwx5rkextY0LdAiH4iX3P2OXeU2raUdpnl8FX+3q9LiG/4+XgMw8hUUuuUp+6u6XpJFo4yg=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 617)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 7408)
+
+
+Started GET "/users" for ::1 at 2019-10-01 17:26:42 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 785)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.2ms | Allocations: 156146)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_users_path' for #<#<Class:0x00007fcc54c84d30>:0x00007fcc54c8f488>
+Did you mean?  new_user_path):
+    19:       <li><%= link_to "投稿画面へ", posts_path , method: :get %></li>
+    20:       <li><%= link_to "新規投稿", new_post_path, method: :get %></li>
+    21:       <li><%= link_to "ユーザー一覧", users_path, method: :get %></li>
+    22:       <li><%= link_to "新規登録", new_users_path, method: :get %></li>
+    23:     </ul>
+    24:     </header>
+    25:     <%= flash[:notice] %>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/users" for ::1 at 2019-10-01 17:27:42 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 779)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.1ms | Allocations: 8670)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 17:27:49 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"6FaMaK6G0V5qfpW8u9+i+4zG4Rd9X4dcupze7rfy5A0itfdFvMdziat2y43HIiyKU6SjBOvz9DuJWrTfdnaPrQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 465)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 7440)
+
+
+Started POST "/users" for ::1 at 2019-10-01 17:28:08 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"CcoHy0u1KTiN3y4/kXzy3bcuLEDAI7qCTXmZvEw6X33DKXzmWfSL70zXcA7tgXysaExuU1aPyeV+v/ONjb403Q==", "user"=>{"name"=>"奥村彰良", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "奥村彰良"], ["email", "akiyoshia.m.1231@gmail.com"], ["created_at", "2019-10-01 08:28:08.920168"], ["updated_at", "2019-10-01 08:28:08.920168"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.5ms | Allocations: 4669)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 17:28:10 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"CcoHy0u1KTiN3y4/kXzy3bcuLEDAI7qCTXmZvEw6X33DKXzmWfSL70zXcA7tgXysaExuU1aPyeV+v/ONjb403Q==", "user"=>{"name"=>"奥村彰良", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 4924)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 17:28:10 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"CcoHy0u1KTiN3y4/kXzy3bcuLEDAI7qCTXmZvEw6X33DKXzmWfSL70zXcA7tgXysaExuU1aPyeV+v/ONjb403Q==", "user"=>{"name"=>"奥村彰良", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3802)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 17:28:11 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"CcoHy0u1KTiN3y4/kXzy3bcuLEDAI7qCTXmZvEw6X33DKXzmWfSL70zXcA7tgXysaExuU1aPyeV+v/ONjb403Q==", "user"=>{"name"=>"奥村彰良", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3799)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/users/new" for ::1 at 2019-10-01 17:30:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/aki/Desktop/rails/tweet_app/app/controllers/users_controller.rb:18: syntax error, unexpected ','
+...ms.require(:user).permit(name:, email:)
+...                              ^):
+  
+app/controllers/users_controller.rb:18: syntax error, unexpected ','
+app/controllers/users_controller.rb:18: syntax error, unexpected ','
+app/controllers/users_controller.rb:18: syntax error, unexpected ','
+Started GET "/users/new" for ::1 at 2019-10-01 17:30:56 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 294)
+Completed 200 OK in 41ms (Views: 33.3ms | ActiveRecord: 0.5ms | Allocations: 10968)
+
+
+Started POST "/users" for ::1 at 2019-10-01 17:31:21 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"MQA76zd05X0Mrvvf1FZqmCk4PT6+yfFKhQGo3ekNIC/740DGJTVHqs2mpe6oq+Tp9lp/LShlgi22x8LsKIlLjw==", "user"=>{"name"=>"test", "email"=>"test.test@email.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test.test@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "test"], ["email", "test.test@email.com"], ["created_at", "2019-10-01 08:31:21.016757"], ["updated_at", "2019-10-01 08:31:21.016757"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.5ms | Allocations: 4443)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/new" for ::1 at 2019-10-01 17:39:39 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 294)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 10621)
+
+
+Started POST "/users" for ::1 at 2019-10-01 17:39:44 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"99af3e7j06a/gqhmfUDf3GhPbxdvXhhLOpl9+/Adjeg9NeTw/KJxcX6K9lcBvVGtty0tBPnyaywJXxfKMZnmSA==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 4620)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/users/new" for ::1 at 2019-10-01 18:02:20 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 294)
+Completed 200 OK in 28ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 10618)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:02:41 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Zbc1w1Mvk7PRW7BbOHIyVO9kTpnttt65+WRjsYV2D5CvVE7uQW4xZBBT7mpEj7wlMAYMinsard7KogmARPJkMA==", "user"=>{"name"=>"比嘉万利菜", "email"=>"example@railstutorial.org"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "比嘉万利菜"], ["email", "example@railstutorial.org"], ["created_at", "2019-10-01 09:02:41.106351"], ["updated_at", "2019-10-01 09:02:41.106351"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://localhost:3000/users/8
+Completed 200 OK in 12ms (ActiveRecord: 2.5ms | Allocations: 3632)
+
+
+Started GET "/users/8" for ::1 at 2019-10-01 18:02:41 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 132)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 7751)
+
+
+Started GET "/users" for ::1 at 2019-10-01 18:06:00 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"nsSQOHV6pe3O/K3lJgeGk0UPFYkI5pBF+miLim9sPRNUJ+sVZzsHOg/089Ra+gjimm1Xmp5K4yLJruG7ruhWsw=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 748)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.5ms | Allocations: 7574)
+
+
+Started GET "/users/5" for ::1 at 2019-10-01 18:15:48 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 127)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 8551)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 18:15:50 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"NzrVwGAy2a+Y62cXCoMg0tE7Tt3xVGrrfJegaUO47+/92a7tcnN7eFnjOSZ2fq6jDlkMzmf4GYxPUcpYgjyETw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1109)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1680)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-new">
+  <div class="container">
+    <div class="form-heading">新規ユーザー登録</div>
+    <div class="form users-form">
+      <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+      <div class="form-body">
+      <% @user.errors.full_messages.each do |message| %>
+      <div class="form-error">
+        <%= message %>
+      </div>
+        <p>ユーザー名</p>
+        <%= f.text_field :name %>
+        <p>メールアドレス</p>
+        <%= f.text_field :email %>
+        <input type="submit" value="新規登録">
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="main users-new">
+2:      <div class="container">
+3:        <div class="form-heading">新規ユーザー登録</div>
+4:        <div class="form users-form">
+5:          <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+6:          <div class="form-body">
+7:          <% @user.errors.full_messages.each do |message| %>
+8:          <div class="form-error">
+9:            <%= message %>
+10:          </div>
+11:            <p>ユーザー名</p>
+12:            <%= f.text_field :name %>
+13:            <p>メールアドレス</p>
+14:            <%= f.text_field :email %>
+15:            <input type="submit" value="新規登録">
+16:          </div>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2019-10-01 18:16:43 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"NzrVwGAy2a+Y62cXCoMg0tE7Tt3xVGrrfJegaUO47+/92a7tcnN7eFnjOSZ2fq6jDlkMzmf4GYxPUcpYgjyETw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1093)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2268)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-new">
+  <div class="container">
+    <div class="form-heading">新規ユーザー登録</div>
+    <div class="form users-form">
+      <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+      <div class="form-body">
+      <% @user.errors.full_messages.each do |message| %>
+      <div class="form-error">
+        
+      </div>
+        <p>ユーザー名</p>
+        <%= f.text_field :name %>
+        <p>メールアドレス</p>
+        <%= f.text_field :email %>
+        <input type="submit" value="新規登録">
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="main users-new">
+2:      <div class="container">
+3:        <div class="form-heading">新規ユーザー登録</div>
+4:        <div class="form users-form">
+5:          <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+6:          <div class="form-body">
+7:          <% @user.errors.full_messages.each do |message| %>
+8:          <div class="form-error">
+9:            
+10:          </div>
+11:            <p>ユーザー名</p>
+12:            <%= f.text_field :name %>
+13:            <p>メールアドレス</p>
+14:            <%= f.text_field :email %>
+15:            <input type="submit" value="新規登録">
+16:          </div>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2019-10-01 18:16:48 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"NzrVwGAy2a+Y62cXCoMg0tE7Tt3xVGrrfJegaUO47+/92a7tcnN7eFnjOSZ2fq6jDlkMzmf4GYxPUcpYgjyETw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1079)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1510)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-new">
+  <div class="container">
+    <div class="form-heading">新規ユーザー登録</div>
+    <div class="form users-form">
+      <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+      <div class="form-body">
+      <% @user.errors.full_messages.each do |message| %>
+      <div class="form-error">
+        
+      </div>
+        <p>ユーザー名</p>
+        <%= f.text_field :name %>
+        <p>メールアドレス</p>
+        <%= f.text_field :email %>
+        <input type="submit" value="新規登録">
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="main users-new">
+2:      <div class="container">
+3:        <div class="form-heading">新規ユーザー登録</div>
+4:        <div class="form users-form">
+5:          <%= form_with model:@user ,url:users_path ,method: :post do |f| %>
+6:          <div class="form-body">
+7:          <% @user.errors.full_messages.each do |message| %>
+8:          <div class="form-error">
+9:            
+10:          </div>
+11:            <p>ユーザー名</p>
+12:            <%= f.text_field :name %>
+13:            <p>メールアドレス</p>
+14:            <%= f.text_field :email %>
+15:            <input type="submit" value="新規登録">
+16:          </div>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2019-10-01 18:17:07 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"NzrVwGAy2a+Y62cXCoMg0tE7Tt3xVGrrfJegaUO47+/92a7tcnN7eFnjOSZ2fq6jDlkMzmf4GYxPUcpYgjyETw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 413)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 8314)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 18:17:53 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 485)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 8396)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 18:17:54 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 232)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 7066)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:18:00 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"kaqOEpbmwmlHMgCy+KSD4bIjLcZaeEcfNIjoUOsxzUFbSfU/hKdgvoY6XoOEWQ2QbUFv1czUNHgHToJhKrWm4Q==", "user"=>{"name"=>"", "email"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 3987)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 18:18:01 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"kaqOEpbmwmlHMgCy+KSD4bIjLcZaeEcfNIjoUOsxzUFbSfU/hKdgvoY6XoOEWQ2QbUFv1czUNHgHToJhKrWm4Q==", "user"=>{"name"=>"", "email"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3978)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 18:18:03 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"kaqOEpbmwmlHMgCy+KSD4bIjLcZaeEcfNIjoUOsxzUFbSfU/hKdgvoY6XoOEWQ2QbUFv1czUNHgHToJhKrWm4Q==", "user"=>{"name"=>"", "email"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3978)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2019-10-01 18:20:29 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"kaqOEpbmwmlHMgCy+KSD4bIjLcZaeEcfNIjoUOsxzUFbSfU/hKdgvoY6XoOEWQ2QbUFv1czUNHgHToJhKrWm4Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms | Allocations: 7514)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/users/new" for ::1 at 2019-10-01 18:23:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 296)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 10948)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:31 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 378)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 10433)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 367)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 10172)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 367)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 10170)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 367)
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 10173)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 367)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 10171)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 367)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 10173)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 367)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.5ms | Allocations: 10177)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:44 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 367)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 10169)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:46 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 367)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 10172)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:53 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 495)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:53 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 10592)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:54 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 10598)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:54 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 10596)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:54 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 10601)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:54 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 10593)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:23:58 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"", "email"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 493)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 10583)
+
+
+Started POST "/users" for ::1 at 2019-10-01 18:24:00 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Mp6rCNFsyvtDMlpLZxXoj+gigAd6+vUJoY5tCFmTtV34fdAlwy1oLII6BHob6Gb+N0DCFOxWhm6SSAc5mBfe/Q==", "user"=>{"name"=>"a", "email"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["email", "a"], ["created_at", "2019-10-01 09:24:00.979353"], ["updated_at", "2019-10-01 09:24:00.979353"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to http://localhost:3000/users/9
+Completed 200 OK in 9ms (ActiveRecord: 3.1ms | Allocations: 3504)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 18:24:00 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 132)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 1.0ms | Allocations: 7761)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 18:24:05 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 7354)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 18:45:38 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 208)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 8619)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:45:48 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1094)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1620)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        </div>
+14:        <% end %>
+15:      </div>
+16:    </div>
+  
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:14: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:50:51 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1096)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2226)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:        <% end %>
+16:      </div>
+17:    </div>
+  
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:51:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1086)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:      </div>
+16:    </div>
+  
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:51:13 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1072)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1486)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:      </div>
+16:    </div>
+  
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:19: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:51:22 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1096)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2235)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:        <% end %>
+16:      </div>
+17:    </div>
+  
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:15: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:51:39 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1054)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2184)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch %>
+    <div class="form-body">
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch %>
+5:        <div class="form-body">
+6:        <p>ユーザー名</p>
+7:        <%= f.text_field :name %>
+8:        <p>メールアドレス</p>
+9:        <%= f.text_field :email %>
+10:        <input type="subimit" value="送信する">
+11:        </div>
+12:        <% end %>
+13:      </div>
+14:    </div>
+  
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:17: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:52:03 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1106)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2236)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:        <% end %>
+16:      </div>
+17:    </div>
+  
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:52:05 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1092)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1506)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:        <% end %>
+16:      </div>
+17:    </div>
+  
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:52:07 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1092)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1506)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main users-edit">
+  <div class="container">
+    <h1 class="form-heading">アカウント編集</h1>
+    <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    <div class="form-body">
+    <% @user.errors.full_messages |message| %>
+      <div class="form-error"><%=message %></div>
+    <% end %>
+    <p>ユーザー名</p>
+    <%= f.text_field :name %>
+    <p>メールアドレス</p>
+    <%= f.text_field :email %>
+    <input type="subimit" value="送信する">
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div class="main users-edit">
+2:      <div class="container">
+3:        <h1 class="form-heading">アカウント編集</h1>
+4:        <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+5:        <div class="form-body">
+6:        <% @user.errors.full_messages |message| %>
+7:          <div class="form-error"><%=message %></div>
+8:        <% end %>
+9:        <p>ユーザー名</p>
+10:        <%= f.text_field :name %>
+11:        <p>メールアドレス</p>
+12:        <%= f.text_field :email %>
+13:        <input type="subimit" value="送信する">
+14:        </div>
+15:        <% end %>
+16:      </div>
+17:    </div>
+  
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+app/views/users/edit.html.erb:20: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:52:36 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1184)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    1: <div class="main users-edit">
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    5:     <div class="form-body">
+    6:     <% @user.errors.full_messages do |message| %>
+    7:       <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:4
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:53:51 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 332)
+Completed 200 OK in 29ms (Views: 18.4ms | ActiveRecord: 0.8ms | Allocations: 11940)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:54:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 510)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.6ms | Allocations: 8892)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:55:34 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 510)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.2ms | Allocations: 8894)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:56:05 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 509)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.1ms | Allocations: 8889)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:56:49 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 489)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 8870)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:56:50 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 7567)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:56:51 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 7563)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:57:29 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 490)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.2ms | Allocations: 8872)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:57:30 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 244)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.2ms | Allocations: 7567)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:57:31 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 7565)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:09 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 524)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 8911)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:10 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 269)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 7588)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:10 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 268)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 7588)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:10 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 268)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 7584)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 268)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 7589)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:12 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 268)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 7584)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:12 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 268)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 7592)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:12 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 268)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 7590)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:12 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 268)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 7585)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:37 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 514)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 8898)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 18:59:58 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 514)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 8892)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:00:07 +0900
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for UsersController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/9/edit" for ::1 at 2019-10-01 19:04:08 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 331)
+Completed 200 OK in 17ms (Views: 7.4ms | ActiveRecord: 1.3ms | Allocations: 11618)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:17 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 5499)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:19 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 5257)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:19 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 5256)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:19 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 7804)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:19 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 8697)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:20 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 9833)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:20 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms | Allocations: 15309)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:20 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.5ms | Allocations: 874)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 5256)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:04:53 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"mzp4vQEKqsrxNSwDrNUEFarIWPd4WlYQVY51Ps3nDf5R2QOQE0sIHTA9cjLQKIpkdaoa5O72JXdmSB8PDGNmXg==", "user"=>{"name"=>"にこにこ", "email"=>"niko@mail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "niko@mail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "にこにこ"], ["email", "niko@mail.com"], ["updated_at", "2019-10-01 10:04:53.608164"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+Redirected to http://localhost:3000/users/9
+Completed 200 OK in 11ms (ActiveRecord: 2.9ms | Allocations: 4259)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 19:04:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 204)
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 7681)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 19:04:58 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 269)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 7589)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:13 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"VPiLrh7UXlwb8taR4IHrEmbwxEH0SM1C9cVuHrfL7BuG0loNI7j75FIg4HxG/KXLpt8a1c41LCsUyjR3bzlEow==", "user"=>{"name"=>"に", "email"=>"niko@mail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "niko@mail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "に"], ["updated_at", "2019-10-01 10:05:13.659788"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+Redirected to http://localhost:3000/users/9
+Completed 200 OK in 9ms (ActiveRecord: 2.0ms | Allocations: 4231)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 19:05:13 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 58)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 7393)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 19:05:17 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 268)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 7584)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:20 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"1E4x6ZF9pcXz13rjo9/kL0WT0NWl1u+H7YoAot2jvuQGZOBKrBEAfboFTA4Foqr2hbwOQZ+rDu4MhVrLBVEWXA==", "user"=>{"name"=>"にこ", "email"=>"niko@mail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "niko@mail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "にこ"], ["updated_at", "2019-10-01 10:05:20.413141"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+Redirected to http://localhost:3000/users/9
+Completed 200 OK in 10ms (ActiveRecord: 1.8ms | Allocations: 4227)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 19:05:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 58)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 7388)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 19:05:26 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 268)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 7583)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:31 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"nG67piu82rUSwd6eqis5ImvABJADwzkbMveYZDiXB+BORGoFFtB/DVsT6HMMVnf7q+/aBDm+2HLT+MIN4GWvWA==", "user"=>{"name"=>"", "email"=>"niko@mail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "niko@mail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 5265)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:37 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"nG67piu82rUSwd6eqis5ImvABJADwzkbMveYZDiXB+BORGoFFtB/DVsT6HMMVnf7q+/aBDm+2HLT+MIN4GWvWA==", "user"=>{"name"=>"にこにこ", "email"=>"niko@mail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "niko@mail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "にこにこ"], ["updated_at", "2019-10-01 10:05:37.538779"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+Redirected to http://localhost:3000/users/9
+Completed 200 OK in 10ms (ActiveRecord: 3.1ms | Allocations: 4227)
+
+
+Started GET "/users/9" for ::1 at 2019-10-01 19:05:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 58)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 7393)
+
+
+Started GET "/users/9/edit" for ::1 at 2019-10-01 19:05:39 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 268)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 7591)
+
+
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:48 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"SL8yCKjsm3VuFXsX9BVHQt7APM3hhxLEMPG3ffYRqbKaleOrlYA+zSfHTfpSaAmbHu/iWdv6863R/u0ULuMBCg==", "user"=>{"name"=>"にこにこ", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 874)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms | Allocations: 5278)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started PATCH "/users/9" for ::1 at 2019-10-01 19:05:49 +0900
+Processing by UsersController#update as JS
+  Parameters: {"authenticity_token"=>"SL8yCKjsm3VuFXsX9BVHQt7APM3hhxLEMPG3ffYRqbKaleOrlYA+zSfHTfpSaAmbHu/iWdv6863R/u0ULuMBCg==", "user"=>{"name"=>"にこにこ", "email"=>"akiyoshia.m.1231@gmail.com"}, "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "akiyoshia.m.1231@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:25:in `update'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 5277)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <h1 class="form-heading">アカウント編集</h1>
+    4:     <div class="form users-form">
+    5:       <%= form_with model:@user , url:user_path(@user), method: :patch do |f| %>
+    6:       <div class="form-body">
+    7:       <% @user.errors.full_messages do |message| %>
+    8:         <div class="form-error"><%=message %></div>
+  
+app/views/users/edit.html.erb:5
+app/controllers/users_controller.rb:29:in `update'
+Started GET "/about" for ::1 at 2019-10-01 19:06:17 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 97)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7491)
+
+
+Started GET "/posts" for ::1 at 2019-10-01 19:06:18 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"bhh7DCP7cKKsE1h+yIjh+xj4er6KUk4EzPww4UGL+96k+wAhMbrSdW0bBk+0dW+Kx5o4rRz+PWP/OlrQgA+Qfg=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 30.4ms | Allocations: 3373)
+Completed 200 OK in 46ms (Views: 40.1ms | ActiveRecord: 1.1ms | Allocations: 11452)
+
+
+Started GET "/posts/new" for ::1 at 2019-10-01 19:06:19 +0900
+Processing by PostsController#new as HTML
+  Parameters: {"authenticity_token"=>"nszKD5oxPYCGAeMhzqXHpfaS/DAOzfI9u0F1qZKRzshUL7EiiHCfV0cJvRCyWEnUKfC+I5hhgVqIhx+YUxWlaA=="}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 500)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 7476)
+
+
+Started GET "/users" for ::1 at 2019-10-01 19:06:21 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"CvBpcRnqSDTqmEVbb6rL9NE0MCGbuQzNO9isv/MaWWHAExJcC6vq4yuQG2oTV0WFDlZyMg0Vf6oIHsaOMp4ywQ=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 948)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.2ms | Allocations: 7913)
+
+
+Started GET "/users/new" for ::1 at 2019-10-01 19:06:24 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"qlBSdHMqIV6Vm+kPD4+qZkTq/TjYgPdw08yARqS9/6FgsylZYWuDiVSTtz5zciQXm4i/K04shBfgCup3ZTmUAQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 481)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7451)
+
+
