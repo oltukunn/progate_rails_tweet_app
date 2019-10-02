@@ -34,9 +34,35 @@ class UsersController < ApplicationController
       render action: :edit
     end
   end
+  #ここからlogin機能
+  def login_form
+  end
+  def login
+    @user = User.find_by(
+      email:params[:email],
+      password:params[:password]
+    )
 
+    if @user
+      session[:user_id] = @user.id
+      flash[:notice] = "ログインしました"
+      redirect_to action: :index
+    else
+      @error_message = "メールアドレスまたはパスワードが間違っています"
+      @email = params[:email]
+      @password = params[:password]
+      render action: :login_form
+    end  
+  end
+  def logout
+    session[:user_id] = nil
+    flash[:notice] = "ログアウトしました"
+    render action: :login_form
+    end
+
+  #ここからストロングパラメータ
     private
     def user_params
-      params.require(:user).permit(:name,:email,:image_name)
+      params.require(:user).permit(:name,:email)
     end
 end

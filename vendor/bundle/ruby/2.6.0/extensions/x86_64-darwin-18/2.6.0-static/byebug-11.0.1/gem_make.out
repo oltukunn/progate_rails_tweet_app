@@ -1,0 +1,19 @@
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+/Users/aki/.rbenv/versions/2.6.2/bin/ruby -I /Users/aki/.rbenv/versions/2.6.2/lib/ruby/2.6.0 -r ./siteconf20191002-1148-18my0x1.rb extconf.rb
+creating Makefile
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20191002-1148-1tz5as4/byebug
