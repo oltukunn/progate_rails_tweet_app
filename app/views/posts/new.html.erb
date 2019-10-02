@@ -1,8 +1,18 @@
-<div class="form">
-  <div class="fomr-body">
-  <%= form_with model: @post, url: posts_path, method: :post do |f| %>
-  <%= f.text_area :content, size: "30x10" %>
-  <input type="submit" value="投稿する">
-  <% end %>
+<div class="main post-new">
+  <div class="container">
+      <h1 class="form-heading">投稿する</h1>
+      <div class="form">
+        <div class="fomr-body">
+          <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+          <%= form_with model: @post, url: posts_path, method: :post do |f| %>
+          <%= f.text_area :content, size: "30x10" %>
+          <input type="submit" value="投稿する">
+          <% end %>
+        </div>
+      </div>
   </div>
 </div>
