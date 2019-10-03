@@ -1,0 +1,15 @@
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+/Users/aki/.rbenv/versions/2.6.2/bin/ruby -I /Users/aki/.rbenv/versions/2.6.2/lib/ruby/2.6.0 -r ./siteconf20191002-1148-1cw1vg8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/aki/Desktop/rails/tweet_app/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20191002-1148-1m9hpcb/bootsnap

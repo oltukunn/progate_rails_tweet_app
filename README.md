@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ProgateのRuby on Railsを参考にtwitterに似たアプリを作成していきます。
+要件は以下の通りです。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. home_controllerを作ること
+2. postテーブルを作ること
+3. userテーブルを作ること
+4. 画像のアップロードができるようになること
