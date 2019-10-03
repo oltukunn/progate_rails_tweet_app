@@ -12705,3 +12705,1968 @@ Processing by UsersController#create as JS
 Completed 200 OK in 30ms (Views: 21.0ms | ActiveRecord: 1.1ms | Allocations: 10159)
 
 
+Started GET "/" for ::1 at 2019-10-03 11:29:16 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 2.2ms | Allocations: 214)
+Completed 200 OK in 1167ms (Views: 1155.1ms | ActiveRecord: 0.0ms | Allocations: 1338719)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-03 11:29:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/about" for ::1 at 2019-10-03 11:29:20 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 94)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 7085)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:29:22 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"2qPup/1wh+p6ROTTNmP70jjKsrTHTqFeqVRHSSF+vR+Y9s3eV/zwKwk8zMKodrCBGv8nAcEtXrmgsSq4PjZWcQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 595)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 0.6ms | Allocations: 13172)
+
+
+Started GET "/login" for ::1 at 2019-10-03 11:29:27 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"EvlQDgdTjlo/TAWq1sW2a+Fn5ZahcDJVGKfhGwtum+ZQrHN3rd/5m0w0LbtI0P04w1JwI6cTzbIRQozqFCZwiA=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 3.2ms | Allocations: 910)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 7862)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:29:28 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"ymRTbG/ehYu2Rs1p+4z7+X96D6kk11oJklUaAuG3q0SIMXAVxVLySsU+5XhlmbCqXU+aHCK0pe6bsHfz/v9AKg=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 234)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 7071)
+
+
+Started GET "/login" for ::1 at 2019-10-03 11:29:30 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"DK/TbgNhIS8w20jFwjCqquc5A8uQBZtBiYfIndM8yblO+vAXqe1W7kOjYNRcJeH5xQyWfpZmZKaAYqVszHQi1w=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.6ms | Allocations: 202)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7010)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:29:31 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"bxVBSpIIf2/hoddh9d5vLgozQDEbeZCutrAhZPKN6ZItQGIzOIQIrpLZ/3BryyR9KAbVhB0ab0m/VUyV7cUC/A=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 232)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 7063)
+
+
+Started GET "/login" for ::1 at 2019-10-03 11:29:32 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"SL40AXvN4QIMhpMP6IkvDkzAbIaK+b56NAJTtvJ46wwK6xd40UGWw3/+ux52nGRdbvX5M4yaQZ095z5H7TAAYg=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.7ms | Allocations: 204)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7020)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:29:33 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"k5MEnm0SsJhDX39OxsPiKHuwjbbnH0KeIYyRrailiEPRxifnx57HWTAnV19Y1ql7WYUYA+F8vXkoafxct+1jLQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 7063)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:08 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 512)
+Completed 200 OK in 25ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 14373)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:10 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 496)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 10598)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:11 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 496)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 0.3ms | Allocations: 10615)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:11 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 10604)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:11 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:11 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 10594)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:12 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 10598)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:12 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 10593)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:12 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 10598)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:15 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 10606)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:16 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 496)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 10599)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:16 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 10596)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:16 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 10597)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:16 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 496)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 10594)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:16 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 496)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 10598)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:21 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 497)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 10603)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:22 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 497)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:22 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 497)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 10592)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:22 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 497)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:22 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"0rFPJTJbIHMz2Te1tHIY5tptLSvcHdF1ZxDCarCOAKSQ5GxcmNdXskChH6QqZ1O1+Fi4ntp+LpJu9a+br8bryg==", "user"=>{"name"=>"まりな", "email"=>"hoge@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 497)
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 10599)
+
+
+Started GET "/about" for ::1 at 2019-10-03 11:30:23 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6849)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:30:24 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"If5RmfoqznCCCg8GSAq2Vik3lu5TU4d0iK+YluyPdWJjq3LgUKa5sfFyJxfWH/0FCwIDW1UweJOBSvVn88eeDA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 232)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 7059)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 0.4ms | Allocations: 10592)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 10590)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 10597)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 10593)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 10604)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:33 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 10588)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:34 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 10592)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:34 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 495)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 10600)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:34 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 10592)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:30:34 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"hd5DJjojfWOok2jvMJtOj1MNWAyrKDpJYwLHjFlEa0bHi2BfkK8KotvrQP6ujgXccTjNua1Lxa5q56p9RgyAKA==", "user"=>{"name"=>"marina", "email"=>"hoge"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 10600)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:33:02 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"If5RmfoqznCCCg8GSAq2Vik3lu5TU4d0iK+YluyPdWJjq3LgUKa5sfFyJxfWH/0FCwIDW1UweJOBSvVn88eeDA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 232)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 7060)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:41:25 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 857)
+Completed 200 OK in 1371ms (Views: 1349.1ms | ActiveRecord: 0.8ms | Allocations: 1343970)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:41:36 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"9aWkSFB8mxK/AjHqGaIIAgXc1LIUJkljeAV4ZjHXWyC38Icx+vDs08x6GfuHt0NRJ+lBBxJFtoRx4BWXLp+wTg==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 634)
+Completed 200 OK in 24ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 12902)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 11:42:14 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 297)
+Completed 200 OK in 41ms (Views: 18.0ms | ActiveRecord: 1.1ms | Allocations: 12213)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:42:18 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"GBrbtPZLV6tqHbUgZAElK/dneVATjlLOnypf42oQuZtaT/jNXMcgahllnTH6FG541VLs5RXtrSmWzzISdVhS9Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+Started POST "/users" for ::1 at 2019-10-03 11:42:21 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"GBrbtPZLV6tqHbUgZAElK/dneVATjlLOnypf42oQuZtaT/jNXMcgahllnTH6FG541VLs5RXtrSmWzzISdVhS9Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+Started POST "/users" for ::1 at 2019-10-03 11:42:21 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"GBrbtPZLV6tqHbUgZAElK/dneVATjlLOnypf42oQuZtaT/jNXMcgahllnTH6FG541VLs5RXtrSmWzzISdVhS9Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+Started POST "/users" for ::1 at 2019-10-03 11:42:21 +0900
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"GBrbtPZLV6tqHbUgZAElK/dneVATjlLOnypf42oQuZtaT/jNXMcgahllnTH6FG541VLs5RXtrSmWzzISdVhS9Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+Started GET "/users/new" for ::1 at 2019-10-03 11:43:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 616)
+Completed 200 OK in 79590ms (Views: 9.3ms | ActiveRecord: 0.8ms | Allocations: 1441043)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 617)
+Completed 200 OK in 96803ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 2098145)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 616)
+Completed 200 OK in 99799ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 2670792)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 616)
+Completed 200 OK in 102786ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 3034127)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for ::1 at 2019-10-03 11:44:01 +0900
+Processing by UsersController#new as HTML
+Started GET "/users/new" for ::1 at 2019-10-03 11:44:01 +0900
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 296)
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 12339)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#top as HTML
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"If5RmfoqznCCCg8GSAq2Vik3lu5TU4d0iK+YluyPdWJjq3LgUKa5sfFyJxfWH/0FCwIDW1UweJOBSvVn88eeDA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendering home/top.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 296)
+  Rendered home/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 383)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.5ms | Allocations: 18115)
+
+
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 20239)
+
+
+Started GET "/" for ::1 at 2019-10-03 11:44:21 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 1.0ms | Allocations: 214)
+Completed 200 OK in 1060ms (Views: 1050.5ms | ActiveRecord: 0.0ms | Allocations: 1338168)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-03 11:44:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-10-03 11:44:27 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"YnWH6Spm32/AUAR1mAhwamaZytXSaVJLWm4Jbj1Yg+4gIKSQgOqorrMoLGQGHTs5RKxfYNQKraxTi2SfIhBogA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 595)
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 0.5ms | Allocations: 13169)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:44:32 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"ZuetvDSclvy8JGA/2CwSEyrHtGLtBC8+CMahtYlAleIkso7FnhDhPc9cSC5GOVlACPIh1+tn0NkBI8xElgh+jA==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+Started GET "/users/new" for ::1 at 2019-10-03 11:44:41 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"YnWH6Spm32/AUAR1mAhwamaZytXSaVJLWm4Jbj1Yg+4gIKSQgOqorrMoLGQGHTs5RKxfYNQKraxTi2SfIhBogA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 81717)
+Completed 200 OK in 100ms (Views: 93.9ms | ActiveRecord: 0.0ms | Allocations: 1079858)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:44:55 +0900
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 633)
+Completed 200 OK in 91780ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 3238712)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started POST "/users" for ::1 at 2019-10-03 11:46:04 +0900
+Started POST "/users" for ::1 at 2019-10-03 11:46:04 +0900
+Started POST "/users" for ::1 at 2019-10-03 11:46:04 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"UelV6Tmw5zG9dIL/nFU3KlLFA50gmcUsQypTx+RfHp8TvHaQkzyQ8M4Mqu4CQHx5cPCWKCb6OstKzz42+xf18Q==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshia.m.1231@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 629)
+Completed 200 OK in 21ms (Views: 8.5ms | ActiveRecord: 1.4ms | Allocations: 16224)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+Processing by UsersController#create as JS
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"UelV6Tmw5zG9dIL/nFU3KlLFA50gmcUsQypTx+RfHp8TvHaQkzyQ8M4Mqu4CQHx5cPCWKCb6OstKzz42+xf18Q==", "user"=>{"name"=>"user", "email"=>"user"}}
+  Parameters: {"authenticity_token"=>"UelV6Tmw5zG9dIL/nFU3KlLFA50gmcUsQypTx+RfHp8TvHaQkzyQ8M4Mqu4CQHx5cPCWKCb6OstKzz42+xf18Q==", "user"=>{"name"=>"user", "email"=>"user"}}
+  Parameters: {"authenticity_token"=>"UelV6Tmw5zG9dIL/nFU3KlLFA50gmcUsQypTx+RfHp8TvHaQkzyQ8M4Mqu4CQHx5cPCWKCb6OstKzz42+xf18Q==", "user"=>{"name"=>"user", "email"=>"user"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  Rendering users/new.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 630)
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 616)
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 617)
+Completed 200 OK in 49ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 29849)
+
+
+Completed 200 OK in 61ms (Views: 24.7ms | ActiveRecord: 0.8ms | Allocations: 37380)
+
+
+Completed 200 OK in 55ms (Views: 29.3ms | ActiveRecord: 0.2ms | Allocations: 33069)
+
+
+Started POST "/users" for ::1 at 2019-10-03 11:47:19 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"UelV6Tmw5zG9dIL/nFU3KlLFA50gmcUsQypTx+RfHp8TvHaQkzyQ8M4Mqu4CQHx5cPCWKCb6OstKzz42+xf18Q==", "user"=>{"name"=>"user", "email"=>"user"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1187)
+Completed 200 OK in 934ms (Views: 893.0ms | ActiveRecord: 1.2ms | Allocations: 1349672)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:36:47 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 547)
+Completed 200 OK in 62ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 12957)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:36:52 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"AdGbOkeuEZlwsqgYUB+yw/nOgQLy7AhCzrvcYEj0jyRDhLhD7SJmWAPKgAnOCvmQ2/sUt/SP96XHXrGRV7xkSg==", "user"=>{"name"=>"user", "email"=>"user"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:36:52.937461"], ["updated_at", "2019-10-03 04:36:52.937461"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+Redirected to http://localhost:3000/users/18
+Completed 200 OK in 11ms (ActiveRecord: 2.2ms | Allocations: 2554)
+
+
+Started GET "/users/18" for ::1 at 2019-10-03 13:36:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 228)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 7870)
+
+
+Started GET "/about" for ::1 at 2019-10-03 13:36:58 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 94)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7483)
+
+
+Started GET "/login" for ::1 at 2019-10-03 13:37:00 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"sgEGiAV9Jiz2qUqOU51Vq/PSBvVeDADODFJXtQn+ncLwVCXxr/FR7YXRYp/NiB740eeTQFhv/ykFtzpEFrZ2rA=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.9ms | Allocations: 912)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7870)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 13:37:10 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"clyOZOiW3k9hU7RVyYiNYSgVWWNUYC+4oYP+KXRE+9UwCa0dQhqpjhIrnERXncYyCiDM1lID0F+oZpPYawwQuw==", "email"=>"user", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "user"], ["password", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.8ms | Allocations: 215)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 7692)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 13:37:14 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"vQo2I5kWZut8NRk22D85P0IkM7eLx9fjucFvNvZtBRH/XxVaM5oRKg9NMSdGKnJsYBGmAo2kKASwJALH6SXufw==", "email"=>"user", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "user"], ["password", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.8ms | Allocations: 201)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 7541)
+
+
+Started GET "/about" for ::1 at 2019-10-03 13:37:18 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms | Allocations: 6854)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:37:20 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"OioqX1iovQSjj6YdNYcnGMCE1iAYfLHEUj57Xo29FQZ4fwkm8iTKxdD3jgyrkmxL4rFDlR4fTiNb2xavkvX+aA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 233)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 7072)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:37:27 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"YJvGZmmiYz6Iv3auXkXcajFnVdPQZTDFIyeBlE6dbD4izuUfwy4U//vHXr/AUJc5E1LAZtYGzyIqwuxlUdWHUA==", "user"=>{"name"=>"aki", "email"=>"aki"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:37:27.559394"], ["updated_at", "2019-10-03 04:37:27.559394"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+Redirected to http://localhost:3000/users/19
+Completed 200 OK in 8ms (ActiveRecord: 2.0ms | Allocations: 2417)
+
+
+Started GET "/users/19" for ::1 at 2019-10-03 13:37:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 60)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 7387)
+
+
+Started GET "/users/19/edit" for ::1 at 2019-10-03 13:37:29 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 520)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 7977)
+
+
+Started GET "/login" for ::1 at 2019-10-03 13:37:33 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"Hq22/zsBWOD1vTJ3L7pBKDF/BbEGDmD4KqIZlDOA+RBc+JWGkY0vIYbFGmaxrwp7E0qQBABtnx8jR3RlLMgSfg=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.1ms | Allocations: 206)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7014)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 13:37:43 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"rUzyw4hOq835n6sdI3bKOyAiTyFU9Twnoyv7SCHFVnjvGdG6IsLcDIrngwy9Y4FoAhfalFKWw8Cqzpa5Po29Fg==", "email"=>"aki", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "aki"], ["password", "aki"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.7ms | Allocations: 200)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 7531)
+
+
+Started GET "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 13:45:15 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#login_form as HTML
+  Parameters: {"method"=>"post", "url"=>"/login"}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.1ms | Allocations: 896)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 8837)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:45:18 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"kuZUp5SAOJcsRuXQgIAD7wGObWq6Me+fokkDbQf1c33Qs3fePgxPVl8+zcEelUi8I7v437xSEHirrG6cGL2YEw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 763)
+Completed 200 OK in 21ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 12357)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:45:21 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 270)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7105)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:45:23 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 270)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 7094)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:45:34 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 270)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7095)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:45:46 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"oeZstLB+vPY94cWWEUFDz3ghL3CMS5XtZh2X63C24czjs0/NGvLLN06Z7YePVAicWhS6xYooagpv+Poab/4Kog==", "user"=>{"name"=>"user", "email"=>"hoge", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 786)
+Completed 200 OK in 17ms (Views: 9.2ms | ActiveRecord: 0.7ms | Allocations: 11738)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:46:13 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"oeZstLB+vPY94cWWEUFDz3ghL3CMS5XtZh2X63C24czjs0/NGvLLN06Z7YePVAicWhS6xYooagpv+Poab/4Kog==", "user"=>{"name"=>"user", "email"=>"tests", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 784)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 11420)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:46:23 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 334)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 12058)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:46:27 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"PxfhJtWuZwIxUZntdaXkinonB+1EYC8BzxNH9ixXpoh9QsJffyIQw0IpsfzrsK/ZWBKSWEID0ObG9ioHMx9N5g==", "user"=>{"name"=>"akiyoshia.m.1231@gmail.com", "email"=>"hoge", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:46:27.473762"], ["updated_at", "2019-10-03 04:46:27.473762"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/20
+Completed 200 OK in 6ms (ActiveRecord: 1.9ms | Allocations: 2445)
+
+
+Started GET "/users/20" for ::1 at 2019-10-03 13:46:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.3ms | Allocations: 7846)
+
+
+Started GET "/login" for ::1 at 2019-10-03 13:46:57 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"ekdrEzSAPirhoZA45JNNwhDGNMl6kiGamdnyOjo+gow4EkhqngxJ65LZuCl6hgaRMvOhfHzx3n2QPJ/LJXZp4g=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.7ms | Allocations: 660)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7474)
+
+
+Started GET "/about" for ::1 at 2019-10-03 13:47:29 +0900
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 95)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms | Allocations: 7478)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:47:31 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"o+yT560oVj81lyIObD4MdiPQt/gQnCmQ6XpNp3e8WZXhubCeB6Qh/kbvCh/yK0clAeUiTRb/1nfgnyBWaPSy+w=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 277)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 7113)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:47:37 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"GKct/w3gpco/0AtxqwbnHNLnhqOVwTudQSkYNc/Mxnda8g6Gp2zSC0yoI2A1E6xP8NITFpOixHpIzHXE0IQtGQ==", "user"=>{"name"=>"akiyoshia.m.1231@gmail.com", "email"=>"hoge", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:47:37.752425"], ["updated_at", "2019-10-03 04:47:37.752425"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/21
+Completed 200 OK in 6ms (ActiveRecord: 1.6ms | Allocations: 2417)
+
+
+Started GET "/users/21" for ::1 at 2019-10-03 13:47:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms | Allocations: 7388)
+
+
+Started GET "/login" for ::1 at 2019-10-03 13:48:08 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"tokOaput641eZtR9Sq1t1DJr2ZTVL6gySoNZRngoGjz03C0TMSGcTC0e/GzUuCaHEF5MIdNMV9VDZjS3Z2DxUg=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.6ms | Allocations: 205)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 7017)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:48:16 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"HHqbqn5N2l36YtGyObIVeHXDl0HlVWusNTKMVsefF8VeL7jT1MGtnIka+aOnp14rV/YC9OM2lEs81+Gn2Nf8qw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 270)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7101)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:48:40 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"33mYYAz04RMRu84ITzlpCRx4hQj2vX0pZu/ru2KutuadLLsZpniW0mLD5hnRLCJaPk0QvfDegs5vCoZKfeZdiA==", "user"=>{"name"=>"hoge", "email"=>"ruby", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 668)
+Completed 200 OK in 21ms (Views: 8.0ms | ActiveRecord: 0.9ms | Allocations: 16199)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:48:50 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 334)
+Completed 200 OK in 18ms (Views: 10.7ms | ActiveRecord: 0.5ms | Allocations: 12120)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:49:06 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"7pTSrPPgR6tJDkSS/ywarwPTx47NRhONs7eyVeZzrbeswfHVWWwwajp2bINhOVH8IeZSO8sl7Gq6Ut+k+TtG2Q==", "user"=>{"name"=>"akityann", "email"=>"akityann", "password"=>"[FILTERED]"}}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 399)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 7976)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:49:07 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"7pTSrPPgR6tJDkSS/ywarwPTx47NRhONs7eyVeZzrbeswfHVWWwwajp2bINhOVH8IeZSO8sl7Gq6Ut+k+TtG2Q==", "user"=>{"name"=>"akityann", "email"=>"akityann", "password"=>"[FILTERED]"}}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 397)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 7955)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:49:16 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 334)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 12021)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:49:24 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"3HLeC8IMquEMMmWOsFaqDSsT8qFF67l9WA4sr9wN+MOeJ/1yaIDdIH9KTZ8uQ+FeCSZnFEOIRppR60Few0UTrQ==", "user"=>{"name"=>"akityann", "email"=>"akityann", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:49:24.976038"], ["updated_at", "2019-10-03 04:49:24.976038"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/22
+Completed 200 OK in 6ms (ActiveRecord: 2.0ms | Allocations: 2451)
+
+
+Started GET "/users/22" for ::1 at 2019-10-03 13:49:24 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 62)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 7527)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/users/22/edit" for ::1 at 2019-10-03 13:50:40 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1363)
+Completed 200 OK in 949ms (Views: 930.9ms | ActiveRecord: 0.7ms | Allocations: 1345685)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:50:44 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"s8EKdw5Ho8QQzKTF6HPVePDSMjlmI2pwNefXWeTdMXjxlCkOpMvUBWO0jNR2Zp4r0uenjGBAlZc8Arqo+5XaFg=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 629)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 7615)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:51:01 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"FUQDt+BoAke2Osyb8dBVNmU6ZIesrfLeMZh0dhGGRsZXESDOSuR1hsVC5IpvxR5lRw/xMqrODTk4fRmHDs6tqA==", "user"=>{"name"=>"akiyo", "email"=>"akiyo", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:51:01.505589"], ["updated_at", "2019-10-03 04:51:01.505589"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/23
+Completed 200 OK in 7ms (ActiveRecord: 1.8ms | Allocations: 2622)
+
+
+Started GET "/users/23" for ::1 at 2019-10-03 13:51:01 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 233)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 7713)
+
+
+Started GET "/users/23" for ::1 at 2019-10-03 13:52:02 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 376)
+Completed 200 OK in 931ms (Views: 900.3ms | ActiveRecord: 0.9ms | Allocations: 1344630)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:52:05 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"u8Itw5bgb8GpAuRj8T8p+wbpGyWAMKzTalr67Zh+Wtb5lw66PGwYANp6zHJvKmKoJNyOkIZTUzRjv5cchzaxuA=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 842)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7837)
+
+
+Started POST "/users" for ::1 at 2019-10-03 13:52:19 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"ehTjx8RPC1P/o/NehD7yw9wgkzjnHVVO5jjs56zqgeY4QcC+bsN8kozb208aK7mQ/hUGjeF+qqnv3YEWs6JqiA==", "user"=>{"name"=>"akiyo", "email"=>"akiyo", "password"=>"[FILTERED]"}}
+Started POST "/users" for ::1 at 2019-10-03 13:52:20 +0900
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"ehTjx8RPC1P/o/NehD7yw9wgkzjnHVVO5jjs56zqgeY4QcC+bsN8kozb208aK7mQ/hUGjeF+qqnv3YEWs6JqiA==", "user"=>{"name"=>"akiyo", "email"=>"akiyo", "password"=>"[FILTERED]"}}
+Started GET "/users/new" for ::1 at 2019-10-03 13:55:43 +0900
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:56:05.150959"], ["updated_at", "2019-10-03 04:56:05.150959"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+Redirected to http://localhost:3000/users/24
+Completed 200 OK in 224912ms (ActiveRecord: 3.2ms | Allocations: 3257069)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "image_name") VALUES (?, ?, ?)[0m  [["created_at", "2019-10-03 04:56:05.501629"], ["updated_at", "2019-10-03 04:56:05.501629"], ["image_name", "default_user.jpg"]]
+  ↳ app/controllers/users_controller.rb:19:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `create'
+Redirected to http://localhost:3000/users/25
+Completed 200 OK in 226445ms (ActiveRecord: 1.6ms | Allocations: 3544904)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/users/new" for ::1 at 2019-10-03 13:56:05 +0900
+Processing by UsersController#new as HTML
+Started GET "/" for ::1 at 2019-10-03 13:56:05 +0900
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 295)
+Completed 200 OK in 35ms (Views: 21.0ms | ActiveRecord: 0.8ms | Allocations: 14625)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#top as HTML
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 94)
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.7ms | Allocations: 333)
+Completed 200 OK in 21ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 18463)
+
+
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 20342)
+
+
+Started GET "/" for ::1 at 2019-10-03 13:56:32 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 1.4ms | Allocations: 934)
+Completed 200 OK in 969ms (Views: 960.2ms | ActiveRecord: 0.0ms | Allocations: 1339308)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-03 13:56:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-10-03 13:56:36 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"ux2ttYk3jcE6z3hEr7mkc75k9TKikQb8+9FSuXRnPyP5SI7MI7v6AEm3UFUxrO8gnFFgh6Ty+RvyND9Iay/UTQ=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 302)
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 12909)
+
+
+Started POST "/users/create" for ::1 at 2019-10-03 13:56:51 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/create"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2019-10-03 13:57:43 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of vendor/bundle/ruby/2.6.0/gems/actionpack-6.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [40 times] (Duration: 7.4ms | Allocations: 5573)
+  Rendered vendor/bundle/ruby/2.6.0/gems/actionpack-6.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.4ms | Allocations: 696)
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 12.1ms | Allocations: 9581)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 10925)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:58:13 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 862)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 8860)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 13:58:14 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 207)
+Completed 200 OK in 47ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7041)
+
+
+Started POST "/users/new?method=post&model=%2Fusers" for ::1 at 2019-10-03 13:58:29 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/new?method=post&model=%2Fusers" for ::1 at 2019-10-03 13:59:06 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-10-03 14:06:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1148)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2337)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    2:   <div class="container">
+    3:     <div class="form-heading">新規ユーザー登録</div>
+    4:     <div class="form users-form">
+    5:       <%= form_tag url:user_path, method: :post do %>
+    6:           <p>ユーザー名</p>
+    7:           <input name="name" value="<%= @user.name %>">
+    8:           <p>メールアドレス</p>
+  
+app/views/users/new.html.erb:5
+Started GET "/users/new" for ::1 at 2019-10-03 14:06:33 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2655)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 10567)
+
+
+Started POST "/users" for ::1 at 2019-10-03 14:06:47 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Bk/yk6WFE1RAirLbboT61HGVzSEA7WpgicDWU74YkLpEGtHqDwlklTPymsrwkbGHU6BYlAaOlYeAJbuioVB71A==", "user"=>{"name"=>"akiyoshi", "email"=>"akiyoshi", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 801)
+Completed 200 OK in 23ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 13416)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:07:40 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 542)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 8534)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:07:41 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 271)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 7104)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:09:40 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 334)
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 12229)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:09:43 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 270)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7102)
+
+
+Started POST "/users" for ::1 at 2019-10-03 14:09:46 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"tSseZTwIAQhz/g8Znl8QQukH2co8zjE9dl+567Bbojn3fj0cloR2yQCGJwgASlsRyzJMfzqtztp/utQarxNJVw==", "user"=>{"name"=>"akiyoshia.m.1231@gmail.com", "email"=>"akiyoshi", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.0ms | Allocations: 98140)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<UsersController:0x00007fafdf763f18>
+Did you mean?  user_path):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started GET "/users/new" for ::1 at 2019-10-03 14:12:01 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 334)
+Completed 200 OK in 32ms (Views: 21.5ms | ActiveRecord: 1.1ms | Allocations: 12234)
+
+
+Started POST "/users" for ::1 at 2019-10-03 14:12:04 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"jn8U37JNXe+w2qyzNBCoOPnPzv0fz9lMg/obNVSueCjMKjemGMEqLsOihKKqBeNr2/pbSBmsJquKH3bES+aTRg==", "user"=>{"name"=>"akiyoshia.m.1231@gmail.com", "email"=>"a", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 406)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 10508)
+
+
+Started POST "/users" for ::1 at 2019-10-03 14:12:04 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"jn8U37JNXe+w2qyzNBCoOPnPzv0fz9lMg/obNVSueCjMKjemGMEqLsOihKKqBeNr2/pbSBmsJquKH3bES+aTRg==", "user"=>{"name"=>"akiyoshia.m.1231@gmail.com", "email"=>"a", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 404)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 10247)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:14:53 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 334)
+Completed 200 OK in 27ms (Views: 18.9ms | ActiveRecord: 0.6ms | Allocations: 12210)
+
+
+Started POST "/users" for ::1 at 2019-10-03 14:15:03 +0900
+Processing by UsersController#create as JS
+  Parameters: {"authenticity_token"=>"Rkwc/t8Y03VuJ7wOJCPpMJdKpNijH3s7r5BI7bkQmSEEGT+HdZSktB1flB+6NqJjtX8xbaV8hNymdSUcplhyTw==", "user"=>{"name"=>"akiyo", "email"=>"akiyo", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akiyo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "akiyo"], ["email", "akiyo"], ["created_at", "2019-10-03 05:15:03.296555"], ["updated_at", "2019-10-03 05:15:03.296555"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to http://localhost:3000/users/26
+Completed 200 OK in 8ms (ActiveRecord: 1.5ms | Allocations: 3730)
+
+
+Started GET "/users/26" for ::1 at 2019-10-03 14:15:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 237)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 7868)
+
+
+Started GET "/user_images/" for ::1 at 2019-10-03 14:15:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/26/edit" for ::1 at 2019-10-03 14:16:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 527)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 7992)
+
+
+Started GET "/user_images/" for ::1 at 2019-10-03 14:16:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user_images/" for ::1 at 2019-10-03 14:16:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-10-03 14:16:55 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"F3uYQeqNdYlYJjDq/u5pus/OguP6k+B2d31XNioM9ZJVLrs4QAECSCteGPtg+yLp7fsXVvzwH5F+mDrHNUQe/A=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 2.9ms | Allocations: 905)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 7865)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:17:05 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"xjVEq0esjl7KtVZMZV/qTEpq4lMHiQ9Lf9zWZlyc/y+EYGfS7SD5n7nNfl37SqEfaF935gHq8Kx2ObuXQ9QUQQ==", "email"=>"akiyo", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "akiyo"], ["password", "akiyo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.7ms | Allocations: 215)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 7692)
+
+
+Started GET "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:18:29 +0900
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login_form as HTML
+  Parameters: {"method"=>"post", "url"=>"/login"}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1270)
+Completed 200 OK in 928ms (Views: 918.8ms | ActiveRecord: 0.0ms | Allocations: 1339799)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:18:39 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"qIqFd+eatQ9g+7Ruc/nTdEWgrrzhetdF2q1erCEoVmTq36YOTRbCzhODnH/t7JgnZ5U7CecZKKLTSDNdPmC9Cg==", "email"=>"akiyo", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "akiyo"], ["password", "akiyo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.9ms | Allocations: 220)
+Completed 200 OK in 264266ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 988681)
+
+
+Started GET "/" for ::1 at 2019-10-03 14:23:29 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 3.3ms | Allocations: 553)
+Completed 200 OK in 902ms (Views: 893.7ms | ActiveRecord: 0.0ms | Allocations: 1339236)
+
+
+Started GET "/top.jpg" for ::1 at 2019-10-03 14:23:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top.jpg"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-10-03 14:23:32 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"authenticity_token"=>"JyQr7yB3h2iH5bmUzuKrw4K5GLb3hBJhfnxWchvbQOplcQiWivvwqfSdkYVQ9+CQoIyNA/Hn7YZ3mTuDBJOrhA=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.5ms | Allocations: 921)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 8285)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:23:45 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"RuJ1LfGqTpAFShkzrW+vO9xZLrWxt0m9qjYS2Nax++YEt1ZUWyY5UXYyMSIzeuRo/my7ALfUtlqj038pyfkQiA==", "email"=>"akiyo", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "akiyo"], ["password", "akiyo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `login'
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.5ms | Allocations: 216)
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 1.5ms | Allocations: 8976)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aki"], ["email", "aki"], ["created_at", "2019-10-03 05:25:12.582741"], ["updated_at", "2019-10-03 05:25:12.582741"], ["password", "hoge"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:25:18 +0900
+Processing by UsersController#login_form as HTML
+  Parameters: {"method"=>"post", "url"=>"/login"}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.7ms | Allocations: 201)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7016)
+
+
+Started POST "/login?method=post&url=%2Flogin" for ::1 at 2019-10-03 14:25:28 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"DDR71H1hv/e5MS7ukGytOPebV00y0YxGrkvy6s/S4h9OYVit1+3INspJBv8OeeZr1a7C+DSyc6Gnrp8b0JoJcQ==", "email"=>"aki", "password"=>"[FILTERED]", "method"=>"post", "url"=>"/login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "aki"], ["password", "hoge"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:41:in `login'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms | Allocations: 5175)
+
+
+Started GET "/users" for ::1 at 2019-10-03 14:25:28 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1340)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 8384)
+
+
+Started GET "/user_images/" for ::1 at 2019-10-03 14:25:28 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2019-10-03 14:26:01 +0900
+Processing by PostsController#index as HTML
+  Parameters: {"authenticity_token"=>"q19SKX1cfBMDZkEPk08QAAkA5QQhNzJ5oBgzPJmfJrbpCnFQ19AL0nAeaR4NWltTKzVwsSdUzZ6p/V7NhtfN2A=="}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3390)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.8ms | Allocations: 11345)
+
+
+Started GET "/users" for ::1 at 2019-10-03 14:26:04 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"OiEM68wZhj1zRSGuFmJ3B66MnRlzjESU1PWLokim9Xp4dC+SZpXx/AA9Cb+IdzxUjLkIrHXvu3PdEOZTV+4eFA=="}
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1133)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms | Allocations: 8029)
+
+
+Started GET "/user_images/" for ::1 at 2019-10-03 14:26:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/logout" for ::1 at 2019-10-03 14:26:06 +0900
+Processing by UsersController#logout as HTML
+  Parameters: {"authenticity_token"=>"sSWiu5TbeUYAns3ZgARa+Bsj7zNfvfNiqOfNrk9yIsvzcIHCPlcOh3Pm5cgeERGrORZ6hlneDIWhAqBfUDrJpQ=="}
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.6ms | Allocations: 203)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 7031)
+
+
+Started GET "/users/new" for ::1 at 2019-10-03 14:26:26 +0900
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"o/C5gGsRub35FjoOdQVCRD0FQrnhp4wwN4lN2aDTIBHhpZr5wZ3OfIpuEh/rEAkXHzDXDOfEc9c+bCAov5vLfw=="}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 710)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7712)
+
+

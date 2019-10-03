@@ -42,7 +42,6 @@ class UsersController < ApplicationController
       email:params[:email],
       password:params[:password]
     )
-
     if @user
       session[:user_id] = @user.id
       flash[:notice] = "ログインしました"
@@ -60,7 +59,7 @@ class UsersController < ApplicationController
     render action: :login_form
     end
 
-  #ここからストロングパラメータ
+  # ここからストロングパラメータ
     private
     def user_params
       params.require(:user).permit(:name,:email)
