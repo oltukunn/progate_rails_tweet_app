@@ -11,12 +11,18 @@
 
   <body>
     <header>
-    <div class="header-logo">
-      <%= link_to "TweetApp", "/" %>
-    </div>
+    <% if @current_user%>
+      <div class="header-logo">
+        <%= link_to "TweetApp", posts_path(@current_user) %>
+      </div>
+    <% else %>
+      <div class="header-logo">
+        <%= link_to "TweetApp", "/" %>
+      </div>
+    <% end %>
     <ul class="header-menus">
-      <% if session[:user_id] %>
-      <li>現在ログインしている人のID:<%= session[:user_id] %></li>
+      <% if @current_user %>
+      <li><%= link_to @current_user.name, user_path(@current_user), method: :get %></li>
       <li><%= link_to "投稿一覧", posts_path , method: :get %></li>
       <li><%= link_to "新規投稿", new_post_path, method: :get %></li>
       <li><%= link_to "ユーザー一覧", users_path, method: :get %></li>
@@ -28,7 +34,11 @@
       <% end %>
     </ul>
     </header>
-    <%= flash[:notice] %>
+    <% if flash[:notice] %>
+      <div class="flash"> 
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
